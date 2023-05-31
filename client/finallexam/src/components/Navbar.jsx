@@ -28,7 +28,7 @@ function Navbar() {
             <li>Team</li>
           </Link>
           <Link>
-            <li>Pages <i class="fa-solid fa-caret-down"></i></li>
+            <li>Pages <i className="fa-solid fa-caret-down"></i></li>
           </Link>
       </ul>
         </div>

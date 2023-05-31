@@ -31,7 +31,7 @@ function Home() {
       setDatas(datas.sort((x, y) => y.price - x.price));
     }
   }
-  function handleDelete(id){
+  function handleDelete(id) {
     Swal.fire({
       title: 'Are you sure?',
       text: "You won't be able to revert this!",
@@ -43,7 +43,7 @@ function Home() {
     }).then((result) => {
       if (result.isConfirmed) {
         getDelete(id)
-        setDatas(datas.filter((x)=>x._id!==id))
+        setDatas(datas.filter((x) => x._id !== id))
         Swal.fire(
           'Deleted!',
           'Your file has been deleted.',
@@ -77,10 +77,10 @@ function Home() {
             }}
           >
             <p>
-              <i class="fa-regular fa-heart"></i> 15 Likes
+              <i className="fa-regular fa-heart"></i> 15 Likes
             </p>
             <p>
-              <i class="fa-regular fa-comment"></i> 02 Comments
+              <i className="fa-regular fa-comment"></i> 02 Comments
             </p>
           </div>
 
@@ -92,7 +92,7 @@ function Home() {
             <div>
               <img
                 src="https://preview.colorlib.com/theme/blogger/img/user.jpg"
-                alt="image"
+                alt = "slider"
               />
             </div>
           </div>
@@ -116,7 +116,7 @@ function Home() {
           }}
           cover={
             <img
-              alt="example"
+              alt = "slideri"
               src="https://preview.colorlib.com/theme/blogger/img/c3.jpg"
             />
           }
@@ -133,7 +133,7 @@ function Home() {
           }}
           cover={
             <img
-              alt="example"
+            alt = "sliderim"
               src="https://preview.colorlib.com/theme/blogger/img/c1.jpg"
             />
           }
@@ -150,7 +150,7 @@ function Home() {
           }}
           cover={
             <img
-              alt="example"
+            alt = "sliderimg"
               src="https://preview.colorlib.com/theme/blogger/img/c3.jpg"
             />
           }
@@ -177,7 +177,7 @@ function Home() {
           <div className="images">
             <img
               src="https://preview.colorlib.com/theme/blogger/img/t1.jpg"
-              alt="imagess"
+              alt = "pht"
             />
           </div>
           <div>
@@ -189,10 +189,10 @@ function Home() {
             <p>amet, consectetur.</p>
             <div className="this-icons">
               <p>
-                <i class="fa-regular fa-heart"></i> 15 Likes
+                <i className="fa-regular fa-heart"></i> 15 Likes
               </p>
               <p>
-                <i class="fa-regular fa-comment"></i> 02 Comments
+                <i className="fa-regular fa-comment"></i> 02 Comments
               </p>
             </div>
           </div>
@@ -201,7 +201,7 @@ function Home() {
           <div className="images">
             <img
               src="https://preview.colorlib.com/theme/blogger/img/t2.jpg"
-              alt="imagess"
+              alt = "salam"
             />
           </div>
           <div>
@@ -213,10 +213,10 @@ function Home() {
             <p>amet, consectetur.</p>
             <div className="this-icons">
               <p>
-                <i class="fa-regular fa-heart"></i> 15 Likes
+                <i className="fa-regular fa-heart"></i> 15 Likes
               </p>
               <p>
-                <i class="fa-regular fa-comment"></i> 02 Comments
+                <i className="fa-regular fa-comment"></i> 02 Comments
               </p>
             </div>
           </div>
@@ -229,7 +229,8 @@ function Home() {
           <div className="images">
             <img
               src="https://preview.colorlib.com/theme/blogger/img/t3.jpg"
-              alt="imagess"
+              alt = "photos"
+
             />
           </div>
           <div>
@@ -241,10 +242,10 @@ function Home() {
             <p>amet, consectetur.</p>
             <div className="this-icons">
               <p>
-                <i class="fa-regular fa-heart"></i> 15 Likes
+                <i className="fa-regular fa-heart"></i> 15 Likes
               </p>
               <p>
-                <i class="fa-regular fa-comment"></i> 02 Comments
+                <i className="fa-regular fa-comment"></i> 02 Comments
               </p>
             </div>
           </div>
@@ -253,7 +254,8 @@ function Home() {
           <div className="images">
             <img
               src="https://preview.colorlib.com/theme/blogger/img/t4.jpg"
-              alt="imagess"
+              alt = "phd"
+
             />
           </div>
           <div>
@@ -265,10 +267,10 @@ function Home() {
             <p>amet, consectetur.</p>
             <div className="this-icons">
               <p>
-                <i class="fa-regular fa-heart"></i> 15 Likes
+                <i className="fa-regular fa-heart"></i> 15 Likes
               </p>
               <p>
-                <i class="fa-regular fa-comment"></i> 02 Comments
+                <i className="fa-regular fa-comment"></i> 02 Comments
               </p>
             </div>
           </div>
@@ -314,6 +316,7 @@ function Home() {
               ) {
                 return item;
               }
+              return null;
             })
             .map((d) => (
               <Card
@@ -327,18 +330,18 @@ function Home() {
                 <p>10 Jan 2018</p>
 
                 <div className="map">
-                  <p style={{fontSize:"20px",textAlign:"center"}}>
+                  <p style={{ fontSize: "20px", textAlign: "center" }}>
                     <span style={{ fontWeight: "600" }}></span> {d.name}
                   </p>
-                  <p style={{fontSize:"20px",textAlign:"center"}}>
+                  <p style={{ fontSize: "20px", textAlign: "center" }}>
                     <span style={{ fontWeight: "600" }}></span>
 
-                   
+
                     {d.price}
                     <span> $</span>
                   </p>
 
-                  <p style={{color:"gray",fontSize:"15px",textAlign:"center"}}>
+                  <p style={{ color: "gray", fontSize: "15px", textAlign: "center" }}>
                     <span style={{ fontWeight: "600" }}></span>
                     {d.desc}
                   </p>
@@ -351,15 +354,15 @@ function Home() {
                   }}
                 >
                   <p>
-                    <i class="fa-regular fa-heart"></i> 15 Likes
+                    <i className="fa-regular fa-heart"></i> 15 Likes
                   </p>
                   <p>
-                    <i class="fa-regular fa-comment"></i> 02 Comments
+                    <i className="fa-regular fa-comment"></i> 02 Comments
                   </p>
                 </div>
                 <div className="delete-view">
-                  <button onClick={()=>handleDelete(d._id)} className="delete">Delete</button>
-                  <Link to = {`/details/${d._id}`} ><button className="view">View Details</button></Link>
+                  <button onClick={() => handleDelete(d._id)} className="delete">Delete</button>
+                  <Link to={`/details/${d._id}`} ><button className="view">View Details</button></Link>
                 </div>
               </Card>
             ))}
